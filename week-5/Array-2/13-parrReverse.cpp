@@ -21,7 +21,7 @@ for(int i=0;i<=n-1;i++){
 cout<<endl;
 //reverse
 int i=1;
-int j=v1.size()-2;//revere all elements exect 1 and last
+int j=v1.size()-2;//revere all elements execpt 1 and last
 while(j>=i){
 
     int temp=v1[i];
