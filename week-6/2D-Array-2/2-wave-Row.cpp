@@ -19,7 +19,7 @@ cin>>m;
 cout<<"Enter No. of Colum of first matrix ";
 cin>>n;
 
-;
+
 
 int arr[m][n];
 
