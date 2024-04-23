@@ -111,11 +111,22 @@ public:
             return 0;
         }
         else
-        {  Node* temp=Head;
+        { 
+            if(idx<size/2){
+             Node* temp=Head;
             for(int i=1;i<=idx;i++){
                 temp=temp->next;
             }
             return temp->data;
+            }
+            else {// idx>size/2
+            Node* temp=tail;
+            for(int i=1;i<size-idx;i++){
+                temp=temp->prev;
+            }
+         return temp->data;
+            }
+            
         }
     }
     void deleteAtHead(){
@@ -201,5 +212,6 @@ int main(){
 // ll.display();
 ll.deleteAtIdx(2);
   ll.display();
+  cout<<ll.getAtIdx(3);
   return 0;
 }
